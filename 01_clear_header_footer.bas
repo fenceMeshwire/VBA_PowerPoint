@@ -5,7 +5,7 @@ Option Explicit
 
 Sub clear_header_footer()
 
-Dim slide As slide
+Dim slide As Slide
 
 For Each slide In ActivePresentation.Slides
   slide.DisplayMasterShapes = True
