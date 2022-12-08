@@ -15,7 +15,7 @@ Dim strPath As String
 strPath = ThisWorkbook.Path & "\" & "presentation.pptx"
 
 Set wkbBook = ThisWorkbook
-Set wksSheet = Tabelle1
+Set wksSheet = Sheet1
 
 ' Initialize PowerPoint objects
 Set ppApplication = CreateObject("PowerPoint.Application")
