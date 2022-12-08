@@ -1,6 +1,5 @@
 Option Explicit
 
-' ______________________________________________________________________
 Sub create_powerpoint_presentation()
 
 Dim wkbBook As Excel.Workbook
