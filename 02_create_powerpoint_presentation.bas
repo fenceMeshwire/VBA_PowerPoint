@@ -47,7 +47,7 @@ ppSlide.Select
 wksSheet.Range("A1:C5").Select
 Selection.Copy
 ppSlideShow.Application.ActiveWindow.View.Paste
-
+' Positioning of the table
 Set ppTable = ppSlide.Shapes(ppSlide.Shapes.Count)
 ppTable.Left = 100
 ppTable.Top = 150
@@ -60,7 +60,7 @@ ppSlide.Select
 ppSlide.Shapes(1).TextFrame.TextRange = wksSheet.Name
 wksSheet.ChartObjects(1).Copy
 ppSlideShow.Application.ActiveWindow.View.Paste
-
+' Positioning of the chart
 Set ppDiagram = ppSlide.Shapes(ppSlide.Shapes.Count)
 ppDiagram.Left = 100
 ppDiagram.Top = 150
@@ -68,7 +68,7 @@ ppDiagram.Top = 150
 ' Save PowerPoint presentation
 ppSlideShow.SaveAs (strPath)
 ppApplication.Quit
-
+' Reset the used objects
 Set wkbBook = Nothing
 Set wksSheet = Nothing
 Set ppSlideShow = Nothing
